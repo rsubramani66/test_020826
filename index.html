@@ -1,12 +1,21 @@
 <html>
 <head>
-<title>
-Sample Java Script
-</title>
+<title>Factorial</title>
 <script language="javascript">
-<!.. This indicates the comment..>
-document writeln("This is my first program");
-document.writeln("about Java Script , R Subramani.");
+var n,i,fact=1;
+n=parseInt(window.prompt("Enter a number to find its factorial"))
+  if (n==0)
+  {
+    document.writeln("Factorial is 1");
+  }
+  else
+  {
+    for(i=1;i<=n;i++)
+    {
+    fact=fact*i;
+    }
+    document.writeln("Factorial is :- "+fact);    
+  }  
 </script>
 </head>
 <body>

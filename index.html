@@ -1,79 +1,9 @@
 <html>
 <head>
-<title>Validations</title>
-<script language="javascript">
-function validate()
-{
-  var uname;pwd;cpwd;email;
-  uname=document.forms["frm1"].uname.value;
-  pwd=document.forms("frm1").pwd.value;
-  cpwd=document.forms("frm1").cpwd.value;
-  email=document.forms("frm1").email.value;
-  if(uname==" ")
-   {
-     alert("Enter all details");
-   } 
-   else if(pwd==" ")
-   {
-     alert("Enter all details");
-   }
-   else if(cpwd==" ")
-   {
-     alert("Enter all details");
-   }
-   else if(email==" ")
-   {
-     alert("Enter all details");
-   }
-  else if(uname.length<8)
-  {
-    alert("username must be atleast 8 characters");
-  }
-  else if(pwd.length<6)
-  {
-     alert("Password must be atleast 6 charecters");     
-  }
-  else if(pwd!=cpwd)
-  {
-    alert("Passwords did not match");
-  }
-  else
-  {
-    alert("Success");
-  }
-}
-</script>
+<title>
+</title>
 </head>
+<script type="text/javascript" src="Jscript4_Factorial.html"></script>
 <body>
-<form name="frm1">
-<table align="center">
-<tr>
-<td>username:</td>
-<td>
-<input type="text" name="Uname"></input>
-</td>
-</tr>
-<tr>
-<td>password:</td>
-<td><input type="password" name="pwd"></input>
-</td>
-</tr>
-<tr>
-<td>confirm password:</td>
-<td><input type="password" name="cpwd"></input>
-</td>
-</tr>
-<tr>
-<td>Email:</td>
-<td><input type="text" name="email"></input>
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-<input type="button" onclick="validate()" name="btn" value="submit"></input>
-</td>
-</tr>
-</table>
-</form>
 </body>
 </html>
